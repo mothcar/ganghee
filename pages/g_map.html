@@ -8,7 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>Aerogem | Pages | Full Width</title>
+<title>Map</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -35,8 +35,8 @@ Licence URI: http://www.os-templates.com/template-terms
         <ul class="clear">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../pages/g_author.html">지은이</a></li>
-          <li><a href="../pages/g_map.html">찾아가는길</a></li>
-          <li class="active"><a href="../pages/g_indexer.html">목차</a></li>
+          <li class="active"><a href="#">찾아가는길</a></li>
+          <li><a href="../pages/g_indexer.html">목차</a></li>
           <li><a class="drop" href="#">책내용</a>
             <ul>
               <li><a href="pages/gallery.html">Gallery</a></li>
@@ -56,30 +56,26 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- End Top Background Image Wrapper -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row4 bgded overlay">
+<!-- ################################################################################################
+<div class="wrapper row2">
+  <div id="breadcrumb" class="hoc clear">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Ipsum</a></li>
+      <li><a href="#">Dolor</a></li>
+    </ul>
+  </div>
 
 </div>
-<!-- ################################################################################################ -->
+################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row3">
   <main class="hoc container clear">
     <!-- main body -->
-
     <!-- ################################################################################################ -->
     <div class="content">
-      <div class="one_quarter">
-        <h6 class="title">목차</h6>
-        <ul class="nospace linklist">
-          <li><a href="#">Primis in faucibus orci</a></li>
-          <li><a href="#">Luctus et ultrices posuere</a></li>
-          <li><a href="#">Cubilia curae aenean quis</a></li>
-          <li><a href="#">Magna in tellus suscipit</a></li>
-          <li><a href="#">Consectetur quis quis ipsum</a></li>
-        </ul>
-      </div>
-      <hr>
       <!-- ################################################################################################ -->
       <img class="imgr borderedbox inspace-5" src="../images/demo/imgr.gif" alt="">
       <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
@@ -88,7 +84,71 @@ Licence URI: http://www.os-templates.com/template-terms
       <p>This is a W3C compliant free website template from <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. For full terms of use of this template please read our <a href="http://www.os-templates.com/template-terms">website template licence</a>.</p>
       <p>You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more website templates visit our <a href="http://www.os-templates.com/">free website templates</a> section.</p>
       <p>Portortornec condimenterdum eget consectetuer condis consequam pretium pellus sed mauris enim. Puruselit mauris nulla hendimentesque elit semper nam a sapien urna sempus.</p>
+      <h1>Table(s)</h1>
 
+      <div id="map" style="width:500px;height:400px;"></div>
+      	<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=829d320b4f722d77b4eef7885777ecde"></script>
+      	<script>
+      		var container = document.getElementById('map');
+      		var options = {
+      			center: new daum.maps.LatLng(36.100574, 127.2691336),
+      			level: 11
+      		};
+
+      		var map = new daum.maps.Map(container, options);
+
+          // 마커가 표시될 위치입니다
+var markerPosition  = new daum.maps.LatLng(36.100574, 127.2691336);
+
+// 마커를 생성합니다
+var marker = new daum.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+      	</script>
+
+
+
+      <div class="scrollable">
+        <table>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">Value 1</a></td>
+              <td>Value 2</td>
+              <td>Value 3</td>
+              <td>Value 4</td>
+            </tr>
+            <tr>
+              <td>Value 5</td>
+              <td>Value 6</td>
+              <td>Value 7</td>
+              <td><a href="#">Value 8</a></td>
+            </tr>
+            <tr>
+              <td>Value 9</td>
+              <td>Value 10</td>
+              <td>Value 11</td>
+              <td>Value 12</td>
+            </tr>
+            <tr>
+              <td>Value 13</td>
+              <td><a href="#">Value 14</a></td>
+              <td>Value 15</td>
+              <td>Value 16</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <!-- ################################################################################################ -->
     </div>
     <!-- ################################################################################################ -->

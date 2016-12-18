@@ -33,7 +33,7 @@ File: Layout CSS
 
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-.wrapper.row1{padding:80px 0;}
+.wrapper.row1{padding:20px 0;}
 .wrapper.row1::before{position:absolute; bottom:0; left:50%; width:0; height:0; margin-left:-15px; border:15px solid; content:"";}
 
 #header{padding:0 30px;}
