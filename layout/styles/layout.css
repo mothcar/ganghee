@@ -10,7 +10,25 @@ File: Layout CSS
 
 @import url("fontawesome-4.6.3.min.css");
 @import url("framework.css");
+@import url("../js/slicknav.css");
+@import url("../js/slicknav.min.css");
 
+/* Paul Nav
+--------------------------------------------------------------------------------------------------------------- */
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	.js #mainav {
+		display:none;
+	}
+
+	.js .slicknav_menu {
+		display:block;
+	}
+}
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row0, .row0 a{}
@@ -333,6 +351,8 @@ table a, #comments a{background-color:inherit;}
 	#topbar{}
 
 	#header{padding-bottom:26px;}
+
+	#map{}
 
 	#mainav{}
 	#mainav ul{display:none;}

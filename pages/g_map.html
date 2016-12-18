@@ -8,64 +8,64 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>Map</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <title>Map</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- Top Background Image Wrapper -->
-<div class="bgded overlay" style="background-image:url('../images/demo/backgrounds/title.jpg');">
   <!-- ################################################################################################ -->
-  <div class="wrapper row1">
-    <header id="header" class="hoc clear">
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- Top Background Image Wrapper -->
+  <div class="bgded overlay" style="background-image:url('../images/demo/backgrounds/title.jpg');">
+    <!-- ################################################################################################ -->
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+        <!-- ################################################################################################ -->
+        <div id="logo" class="fl_left">
+          <h1><a href="../index.html">양심효심</a></h1>
+        </div>
+        <!-- ################################################################################################ -->
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/g_author.html">지은이</a></li>
+            <li class="active"><a href="#">찾아가는길</a></li>
+            <li><a href="../pages/g_indexer.html">목차</a></li>
+            <li><a class="drop" href="#">책내용</a>
+              <ul>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/full-width.html">Full Width</a></li>
+                <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+                <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+                <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <!-- ################################################################################################ -->
-      <div id="logo" class="fl_left">
-        <h1><a href="../index.html">양심효심</a></h1>
-      </div>
-      <!-- ################################################################################################ -->
-      <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../pages/g_author.html">지은이</a></li>
-          <li class="active"><a href="#">찾아가는길</a></li>
-          <li><a href="../pages/g_indexer.html">목차</a></li>
-          <li><a class="drop" href="#">책내용</a>
-            <ul>
-              <li><a href="pages/gallery.html">Gallery</a></li>
-              <li><a href="pages/full-width.html">Full Width</a></li>
-              <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-              <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-              <li><a href="pages/basic-grid.html">Basic Grid</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </div>
     <!-- ################################################################################################ -->
   </div>
+  <!-- End Top Background Image Wrapper -->
   <!-- ################################################################################################ -->
-</div>
-<!-- End Top Background Image Wrapper -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################
-<div class="wrapper row2">
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################
+  <div class="wrapper row2">
   <div id="breadcrumb" class="hoc clear">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Lorem</a></li>
-      <li><a href="#">Ipsum</a></li>
-      <li><a href="#">Dolor</a></li>
-    </ul>
-  </div>
+  <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Lorem</a></li>
+  <li><a href="#">Ipsum</a></li>
+  <li><a href="#">Dolor</a></li>
+</ul>
+</div>
 
 </div>
 ################################################################################################ -->
@@ -86,28 +86,28 @@ Licence URI: http://www.os-templates.com/template-terms
       <p>Portortornec condimenterdum eget consectetuer condis consequam pretium pellus sed mauris enim. Puruselit mauris nulla hendimentesque elit semper nam a sapien urna sempus.</p>
       <h1>Table(s)</h1>
 
-      <div id="map" style="width:500px;height:400px;"></div>
-      	<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=829d320b4f722d77b4eef7885777ecde"></script>
-      	<script>
-      		var container = document.getElementById('map');
-      		var options = {
-      			center: new daum.maps.LatLng(36.100574, 127.2691336),
-      			level: 11
-      		};
+      <div id="map" class="hoc" style="width:500px;height:400px;"></div>
+      <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=829d320b4f722d77b4eef7885777ecde"></script>
+      <script>
+      var container = document.getElementById('map');
+      var options = {
+        center: new daum.maps.LatLng(36.100574, 127.2691336),
+        level: 11
+      };
 
-      		var map = new daum.maps.Map(container, options);
+      var map = new daum.maps.Map(container, options);
 
-          // 마커가 표시될 위치입니다
-var markerPosition  = new daum.maps.LatLng(36.100574, 127.2691336);
+      // 마커가 표시될 위치입니다
+      var markerPosition  = new daum.maps.LatLng(36.100574, 127.2691336);
 
-// 마커를 생성합니다
-var marker = new daum.maps.Marker({
-    position: markerPosition
-});
+      // 마커를 생성합니다
+      var marker = new daum.maps.Marker({
+        position: markerPosition
+      });
 
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-      	</script>
+      // 마커가 지도 위에 표시되도록 설정합니다
+      marker.setMap(map);
+      </script>
 
 
 
@@ -166,7 +166,7 @@ marker.setMap(map);
       <ul class="nospace linklist contact">
         <li><i class="fa fa-map-marker"></i>
           <address>
-          전라북도 완주군 운주면 완창리 269번지 (운주로 276)
+            전라북도 완주군 운주면 완창리 269번지 (운주로 276)
           </address>
         </li>
         <li><i class="fa fa-phone"></i> 063 263 7237</li>
