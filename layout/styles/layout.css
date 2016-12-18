@@ -10,8 +10,6 @@ File: Layout CSS
 
 @import url("fontawesome-4.6.3.min.css");
 @import url("framework.css");
-@import url("../js/slicknav.css");
-@import url("../js/slicknav.min.css");
 
 /* Paul Nav
 --------------------------------------------------------------------------------------------------------------- */
@@ -248,6 +246,7 @@ td{border-width:0 1px;}
 --------------------------------------------------------------------------------------------------------------- */
 body{color:#676767; background-color:#222222;}
 a{color:#F4BF4F;}
+
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
@@ -309,6 +308,7 @@ blockquote::before{color:rgba(0,0,0,.05);}
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
 .container .sidebar nav a:hover{color:#F4BF4F;}
 
+
 .pagination a, .pagination strong{border-color:#D7D7D7;}
 .pagination .current *{color:#FFFFFF; background-color:#F4BF4F;}
 
@@ -322,6 +322,10 @@ th{color:#FFFFFF; background-color:#373737;}
 tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
 tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
 table a, #comments a{background-color:inherit;}
+
+.paul-an a{color:#3366ff; font-size:18px;}
+.paul-an li{margin:10px 0}
+/* here  F4BF4F  ff0000 */
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
