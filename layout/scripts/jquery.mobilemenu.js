@@ -12,7 +12,7 @@ Thanks to:
 */
 
 $('<form action="#"><select /></form>').appendTo("#mainav");
-$("<option />",{selected:"selected",value:"",text:"MENU"}).appendTo("#mainav select");
+$("<option />",{selected:"selected",value:"",text:"선택"}).appendTo("#mainav select");
 $("#mainav a").each(function(){var e=$(this);
   if($(e).parents("ul ul ul").length>=1){
     $("<option />",{value:e.attr("href"),text:"- - - "+e.text()}).appendTo("#mainav select")}
